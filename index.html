@@ -1,0 +1,70 @@
+<!doctype HTML>
+<html lang='en'>
+	<head>
+		<title>SurveyForm</title>
+		<meta charset="utf-8">	
+		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class = 'container'>
+			<h1 id = 'title'>Survey Form</h1>
+			<p id = 'description'>Thank You for filling out the Survey Form</p>
+			<div id="survey-form">
+				<form>
+					<div id='pinfo'>
+						<label id='name-label'>Enter your name:</label><br>
+						<input id='name' type='text' placeholder="Enter Name"><br>
+						<label id='email-label'>Enter your Email:</label><br>
+						<input id='email' type ='email' placeholder="Enter Email"><br>
+						<labe id='number-label'l>Enter your age:</label><br>
+						<input id='number' type='number' placeholder="Enter Age"  min=10 max=99 ><br>
+					</div><!--pinfo div closed-->
+					<div id='dpdown'>
+						<label id='dphead'>Choose Your Profession:</label><br>
+						<select id='dropdown'>
+							<option value='default' selected>Select one option</option>
+							<option value='Student'>Student</option>
+							<option value="Teacher">Teacher</option>
+							<option value="EmpProf">Employed Professional</option>
+							<option value='Unemp'>Unemployed</option>
+						</select>
+					</div><!--dpdown div closed-->
+					<div id='radiobut'>
+						<label id='radiohead'>Choose Favorite Text Editor :<br>
+						<div id='butts'>
+							<input type='radio' id='vsc' name='favedit' value='vsc'>
+							<label for='vscode'>VS Code<br>
+							<input type='radio' id='atm' name='favedit' value='atm'>
+							<label for='atmedit'>Atom<br>
+							<input type='radio' id='subl' name='favedit' value='subl'>
+							<label for='subedit'>Sublime<br>
+						</div>
+					</div><!--radiobut div closed-->
+					<div id='checkb'>
+						<label id='checlbhead'>Select coding  language do you know:</label><br>
+						<div id='boxes'>
+							<input type='checkbox' id='c' name='lang' value='c'>
+							<label for='Clang'>C<br>
+							<input type='checkbox' id='cpp' name='lang' value='cpp'>
+							<label for='c++'>C++<br>
+							<input type='checkbox' id='pyth' name='lang' value='pyth'>
+							<label for='pythlang'>Python<br>
+							<input type='checkbox' id='java' name='lang' value='java'>
+							<label for='javalang'>Java<br>
+						</div><!--boxes div closed-->
+					</div><!--checkb div closed-->
+					<div id='feedback'>
+						<p id='suggest'>Suggestions:</p>
+						<textarea id='txtarea' placeholder="Write your suggestions here..."></textarea>
+					</div><!--feedback div closed-->
+					<div id='subbutton'>
+						<input type='submit' value='Submit'><br>
+					</div><!--Subbutton div closed-->
+				</form>
+			</div><!--Survey-Form Div Closed-->
+		</div><!--Container div Closed-->
+	<body>
+</html>
